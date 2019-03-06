@@ -19,6 +19,9 @@ void setup()
 
 void loop() 
 {
+  
+  /* Use if testing with pushbutton on breadboard and not key fab pushbutton*/
+  /*
   buttonState = digitalRead(buttonPin);
   
   if (buttonState == LOW) 
@@ -28,6 +31,7 @@ void loop()
   {
     digitalWrite(ledPin, LOW);
   }
+  */
   
   if(FingerprintScanner.isNewFingerScanned() && FingerprintScanner.isVerified())
   {
